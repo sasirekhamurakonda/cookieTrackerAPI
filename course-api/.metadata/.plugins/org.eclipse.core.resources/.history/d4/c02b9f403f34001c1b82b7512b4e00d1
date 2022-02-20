@@ -1,0 +1,23 @@
+package io.javabrains.cookies;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+@RestController
+public class CookieController {
+	@Autowired
+	public CookieService cookieService;
+	
+	@RequestMapping("/cookies")
+	public List<Cookie> getAllCookies() {
+		
+		return cookieService.getAllCookies();
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+package io.javabrains.cookies;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+
+@Service
+public class CookieService {
+	@Autowired
+	public CookieRepository cookieRepository;
+	public List<Cookie> getAllCookies(){
+		List<Cookie> cookies=new ArrayList<>();
+		cookieRepository.findAll().forEach(cookies::add);
+		return cookies;
+	}
+	
+}

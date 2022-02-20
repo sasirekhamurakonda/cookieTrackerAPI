@@ -1,0 +1,6 @@
+package io.javabrains.cookies;
+
+@RestController
+public class CookieController {
+
+}

@@ -1,0 +1,6 @@
+1634412193017	Copy package
+1634412218039	Rename type 'Topic'
+1634412286692	Rename type 'TopicController'
+1634412299856	Rename type 'TopicRepository'
+1634412317248	Rename type 'TopicService'
+1634412732458	Rename method 'updateTopic'
